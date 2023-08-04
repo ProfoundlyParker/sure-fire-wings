@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sure Fire Hot Wings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--whenever you come back to this project, as of 06/29: trying to get rid of x-scrollbar for small breakpoints and wanting to add margin-x for small breakpoints as well-->
+<body class="min-h-screen bg-white-light dark:bg-black-light dark:text-white-light">
+        <header class="bg-gradient-to-tr from-orange via-yellow to-red text-black-light sticky top-0 z-10">
+            <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+                    <a href="#hero"><h1 class="text-xl font-extrabold tracking-wide">🔥 Sure Fire Hot Wings</h1></a>
+                <div>
+                    <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+                        &#9776;
+                    </button>
+                    <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                        <a href="#menu" class="hover:opacity-70 font-medium">Menu</a>
+                        <a href="#reviews" class="hover:opacity-70 font-medium">Reviews</a>
+                        <a href="#contact" class="hover:opacity-70 font-medium">Contact</a>
+
+                    </nav>
+                </div>
+            </section>
+            <section id="mobile-menu" class="absolute top-0 bg-black-light text-white-light w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+                <button class="text-8xl self-end px-4">
+                    &times;
+                </button>
+                <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                    <a href="#hero" class="w-full text-center py-6 hover:opacity-80">Home</a>
+                    <a href="#menu" class="w-full text-center py-6 hover:opacity-80">Menu</a>
+                    <a href="#reviews" class="w-full text-center py-6 hover:opacity-90">Reviews</a>
+                    <a href="#contact" class="w-full text-center py-6 hover:opacity-80">Contact</a>
+                </nav>
+            </section>
+
+            <!-- Hero Section -->
+        </header>
+        <main class="max-w-4xl mx-auto">
+            <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row pt-6 pb-0 items-center gap-8 mb-0 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+                <article class="sm:w-1/2">
+                    <span class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white-light">
+                        We Boldly Go <span class="text-orange dark:text-orange-light">Where No Wing</span> Has Gone Before...
+                    </h2>
+                    <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-orange dark:text-orange-light">
+                        We're serving up fresh & spicy wings daily. Experience the heat with 12 deliciously hot & bold wing flavors.
+                    </p>
+                    <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-black-light dark:text-white-light">
+                        Think you can handle the heat?
+                    </p>
+                    <br>
+                    <div class="h-16 flex justify-center">
+                        <a href="#menu">
+                            <button class="bg-orange hover:bg-orange-dark active:bg-orange-light text-white-light align-top p-3 rounded-lg w-auto text-base">View Menu
+                            </button>
+                        </a>
+                    </div>
+                </article>
+                <img class="w-1/2" src="./img/sfw-logo.png" alt="Logo">
+            </section>
+        <br>
+        <br>
+
+        <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
+
+<!-- Flavor Profiles Section -->
+    <div id="flavors" class="mx-auto max-w-3xl text-center my-12">
+        <h3 class="mb-1 text-3xl font-bold">Flavor Profiles</h3>
+    </div>        
+<!--Testing flavors feature-->
+    <section class=" container max-w-full mx-6 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6 my-12 justify-evenly">
+        <div class="flex min-h-fit items-center justify-center bg-transparent">
+            <div class="group h-80 w-64 [perspective:1000px]">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div class="absolute inset-0">
+                <img class="h-full w-full rounded-xl object-contain shadow-xl shadow-black/40 bg-yellow" src="./img/mild.png" alt="Mild">
+                </div>
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-yellow-dark/80 px-12 text-center text-white-light [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div class="flex min-h-full flex-col items-center justify-center">
+                    <h1 class="text-3xl font-bold">Mild</h1>
+                    <p class="text-xl">🔥</p>
+                    <p class="text-lg">Smokey, sweet, and savory flavor profiles for those who like to keep it mild, not wild!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="flex min-h-fit items-center justify-center bg-transparent">
+            <div class="group h-80 w-64 [perspective:1000px]">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div class="absolute inset-0">
+                <img class="h-full w-full rounded-xl object-contain shadow-xl shadow-black/40 bg-orange" src="./img/medium.png" alt="Medium">
+                </div>
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-orange-dark/80 px-12 text-center text-white-light [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div class="flex min-h-full flex-col items-center justify-center">
+                    <h1 class="text-3xl font-bold">Medium</h1>
+                    <p class="text-xl">🔥🔥</p>
+                    <p class="text-lg">Starting to heat up with bold flavors and spices from around the globe!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="flex min-h-fit items-center justify-center bg-transparent">
+            <div class="group h-80 w-64 [perspective:1000px]">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div class="absolute inset-0">
+                <img class="h-full w-full rounded-xl object-contain shadow-xl shadow-black/40 bg-red" src="./img/hot.png" alt="Hot">
+                </div>
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-red-dark/80 px-12 text-center text-white-light [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div class="flex min-h-full flex-col items-center justify-center">
+                    <h1 class="text-3xl font-bold">Hot</h1>
+                    <p class="text-xl">🔥🔥🔥</p>
+                    <p class="text-lg">A true test of the tastebuds perfect for those who love to feel the fiery burn!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div id="menu"></div>
+    <br><br><br>
+    
+
+    <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
+
+    <!--MENU-->
+    <div class="mx-auto my-8 max-w-3xl text-center">
+        <h3 class="text-black-light dark:text-white-light text-3xl font-bold">Menu</h3>
+    </div>
+    <!-- MILD VARIETIES -->
+    <section id="menu-mild">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!--MILD VARIETY 1-->
+        <div class="grid mt-12">
+            <div class="bg-yellow transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                <span class="bg-yellow-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Mild</span>
+                <img src="./img/barbecue-5294861_640.jpg" alt="Smoked Honey BBQ Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg text font-bold">Smoked Honey BBQ Wings</h1>
+                        <p class="text-black-light text-sm text-center">A sweet & smokey classic </p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-yellow-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--MILD VARIETY 2-->
+            <div class="grid mt-12">
+                <div class="bg-yellow transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-yellow-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Mild</span>
+                    <img src="./img/daniel-hooper-PaaboPF3dVY-unsplash.jpg" alt="Lemon Pepper Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Lemon Pepper Wings</h1>
+                        <p class="text-black-light text-sm text-center">Zesty lemon + fresh-cracked pepper</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-yellow-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--MILD VARIETY 3-->
+            <div class="grid mt-12">
+                <div class="bg-yellow transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg">
+                    <span class="bg-yellow-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Mild</span>
+                    <img src="./img/pexels-meraj-kazi-11299734.jpg" alt="Soy Sesame Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Soy Sesame Wings</h1>
+                        <p class="text-black-light text-sm text-center">Umami soy sauce + sesame seeds</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-yellow-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MEDIUM VARIETIES -->   
+    <section id="menu-medium">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!--MEDIUM VARIETY 1-->
+            <div class="grid mt-12">
+                <div class="bg-orange transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-orange-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Medium</span>
+                    <img src="./img/pexels-leonardo-luz-13999219.jpg" alt="Korean Gochujang Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Korean Gochujang Wings</h1>
+                        <p class="text-black-light text-sm text-center">Sweet & spicy gochujang basted wings topped with scallions served with spicy Asian dressing</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-orange-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--MEDIUM VARIETY 2-->
+            <div class="grid mt-12">
+                <div class="bg-orange transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-orange-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Medium</span>
+                    <img src="./img/pexels-christian-moises-pahati-5724555.jpg" alt="Wings Trio" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Wings Trio</h1>
+                        <p class="text-black-light text-sm text-center">A trio of Calabrian Chili, Chili Garlic, and Garlic Parmesan wings & a generous side of ranch dressing</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $16.99
+                        </h2>
+                        <button class="bg-orange-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--MEDIUM VARIETY 3-->
+            <div class="grid mt-12">
+                <div class="bg-orange transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-orange-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Medium</span>
+                    <img src="./img/pexels-lenon-mwamtobe-14661493.jpg" alt="Thai Curry Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Thai Curry Wings</h1>
+                        <p class="text-black-light text-sm text-center">Basil, carrot, lemongrass, and our signature Thai red curry sauce served with fries</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-orange-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- HOT VARIETIES -->
+    <section id="menu-hot">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!--HOT VARIETY 1-->
+            <div class="grid mt-12">
+                <div class="bg-red transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-red-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Hot</span>
+                    <img src="./img/pexels-alena-shekhovtcova-6941026.jpg" alt="Hot Reaper Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Hot Reaper Wings</h1>
+                        <p class="text-black-light text-sm text-center">A deadly hot combination of Carolina Reaper, ghost pepper, and habanero</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $10.99
+                        </h2>
+                        <button class="bg-red-dark text-white-light px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--HOT VARIETY 2-->
+            <div class="grid mt-12">
+                <div class="bg-red transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-red-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Hot</span>
+                    <img src="./img/pexels-razane-adra-13785146.jpg" alt="Lemon Pepper Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Blazin' Buffalo Wings</h1>
+                        <p class="text-black-light text-sm text-center">Aged heirloom cayenne pepper sauce topped with spring onion</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $8.99
+                        </h2>
+                        <button class="bg-red-dark text-white px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+            <!--HOT VARIETY 3-->
+            <div class="grid mt-12">
+                <div class="bg-red transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+                    <span class="bg-red-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Hot</span>
+                    <img src="./img/chicken-1559579_1280.jpg" alt="Soy Sesame Wings" class="w-64 h-44 mx-auto rounded-lg transform transition duration-300 hover:scale-105">
+                    <div class="flex flex-col items-center my-3 space-y-2">
+                        <h1 class="text-black-light text-lg font-bold">Globetrotter Wings</h1>
+                        <p class="text-black-light text-sm text-center">Smoked wings basted in a global pepper sauce blend</p>
+                        <h2 class="text-black-light text-2xl font-bold">
+                            $13.99
+                        </h2>
+                        <button class="bg-red-dark text-white px-8 py-2 focus:outline-none rounded-full mt-24 transform transition duration-300 hover:scale-105">Order Now</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reviews"></div>
+        <br><br><br>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2">
+    
+            <section class="px-4 my-8">
+                <div class="mx-auto max-w-3xl text-center">  
+                    <h3 class="mb-6 text-3xl font-bold">Customer Reviews</h3>
+                    <p class="mb-6 pb-2 text-black-light dark:text-white-light md:mb-12">
+                        See what all the cluck is about!
+                    </p>
+                </div>
+          
+            <div class="grid gap-12 text-center md:grid-cols-2">
+              <!--First Testimonial-->
+              <div class="mb-6 md:mb-0">
+                <div class="mb-6 flex justify-center">
+                  <img
+                    src="./img/chicken.png"
+                    class="w-24 rounded-full shadow-lg dark:shadow-black/30" />
+                </div>
+                <p class="my-4 text-xl text-black-light dark:text-white-light">
+                  "Sure Fire Wings is the real deal! The burning hot wings, crispy fries, and delicious dipping sauces are my favorite weekend bite."
+                </p>
+                <p class="italic">- Sam P.</p>
+              </div>
+          
+              <!--Second Testimonial-->
+              <div class="mb-0">
+                <div class="mb-6 flex justify-center">
+                  <img
+                    src="./img/hot-peppers.png"
+                    class="w-24 rounded-full shadow-lg dark:shadow-black/30" />
+                </div>
+                <p class="my-4 text-xl text-black-light dark:text-white-light">
+                  "Devilishly hot and delicious wings. Get ready to sweat, and don't miss the Sure Fire food truck at Mercado East on Saturdays!"
+                </p>
+                <p class="italic">- Teresa J.</p>
+              </div>
+            </div>
+          </section>
+       
+
+
+        <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
+
+<!-- Gallery -->
+<div class="grid grid-cols-2 gap-2 my-14">
+<!--Gallery image 1-->
+    <div class="overflow-hidden bg-transparent cursor-pointer rounded-lg relative group">
+        <div class="rounded-lg z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-32 text-white flex items-end">
+            <div>
+                <div class="transform-gpu p-4 space-y-3 text-lg md:text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transition duration-300 ease-in-out">
+                    <div class="font-bold">Mercado East</div>
+                    <div class="opacity-60 text-xs md:text-sm">
+                        Eat local and come see us every weekend @ Mercado East from 11-5! Half-priced wings and drinks plus live music and games hosted by Local Eateries in partnership with Urban Unity Events.
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="h-auto max-w-full rounded-lg group-hover:scale-110 duration-300 ease-in-out" src="./img/pexels-vladyslav-dukhin-221357.jpg" alt="Mercado East"> 
+    </div>
+    <!--Gallery image 2-->
+    <div class="overflow-hidden bg-transparent cursor-pointer rounded-lg relative group">
+        <div class="rounded-lg z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-32 text-white flex items-end">
+            <div>
+                <div class="transform-gpu p-4 space-y-3 text-lg md:text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transition duration-300 ease-in-out">
+                    <div class="font-bold">Sure Fire Wings truck</div>
+                    <div class="opacity-60 text-xs md:text-sm">
+                        Sure Fire is the ultimate destination for hot wings lovers! Our food truck is serving up delicious, fiery hot wings that will leave you craving more. We take pride in our excellent customer service and a fun, lively atmosphere.
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="h-auto max-w-full rounded-lg group-hover:scale-110 duration-300 ease-in-out" src="./img/pexels-rdne-stock-project-5779658.jpg" alt="Sure Fire Wings food truck"> 
+    </div>
+    <!--Gallery image 3-->
+    <div class="overflow-hidden bg-transparent cursor-pointer rounded-lg relative group">
+        <div class="rounded-lg z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-32 text-white flex items-end">
+            <div>
+                <div class="transform-gpu p-4 space-y-3 text-lg md:text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transition duration-300 ease-in-out">
+                    <div class="font-bold">Chef prepared</div>
+                    <div class="opacity-60 text-xs md:text-sm">
+                        Chef Trent is happy to serve you his spiciest wings yet! Chef Trent has worked as a restauranteur for over 15 years, and is delighted to bring his unique culinary flair to you as Head Chef for Sure Fire Wings!
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="h-auto max-w-full rounded-lg group-hover:scale-110 duration-300 ease-in-out" src="./img/pexels-rdne-stock-project-5779821.jpg" alt="Chef preparing food truck orders"> 
+    </div>
+    <!--Gallery image 4-->
+    <div class="overflow-hidden bg-transparent cursor-pointer rounded-lg relative group">
+        <div class="rounded-lg z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-32 text-white flex items-end">
+            <div>
+                <div class="transform-gpu p-4 space-y-3 text-lg md:text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transition duration-300 ease-in-out">
+                    <div class="font-bold">Bold, fresh ingredients</div>
+                    <div class="opacity-60 text-xs md:text-sm">
+                        Our wings are made with the freshest ingredients, and our signature sauces are a must-try. We source all our ingredients locally, and we invite you to taste the bold difference fresh & local can make!
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="h-auto max-w-full rounded-lg group-hover:scale-110 duration-300 ease-in-out" src="./img/pexels-karolina-grabowska-4033324.jpg" alt="Red peppers"> 
+    </div>
+</div>
+
+<hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
+
+            <!-- Contact Section -->
+            <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-black dark:text-white">
+                    Contact Us
+                </h2>
+                <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none" />  
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none"></textarea>
+                <button class="bg-orange hover:bg-orange-dark active:bg-orange-light text-white-light dark:text-white-light p-3 w-48 rounded-lg">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-gradient-to-br from-orange via-yellow to-red text-black-light text-xl">
+            <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+                <address>
+                    <h2>Sure Fire Hot Wings, Inc.</h2>
+                    555 Scorched Way<br>
+                    Peppersville, PA 12345-5555<br>
+                    Email: <a href="mailto:questions@surefirewings.com" class="hover:opacity-80">questions@surefirewings.com</a><br>
+                    Phone: <a href="tel:+15555555555" class="hover:opacity-80">(555) 555-5555</a>
+                </address>
+                <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                    <a href="#menu" class="hover:opacity-80">Menu</a>
+                    <a href="#reviews" class="hover:opacity-80">Reviews</a>
+                    <a href="#contact" class="hover:opacity-80">Contact</a>
+                </nav>
+                <div class="flex flex-col sm:gap-2">
+                    <p class="text-right">Copyright &copy; <span id="year"><script>document.write(new Date().getFullYear())</script></span></p>
+                    <p class="text-right">All Rights Reserved</p>
+                </div>
+            </section>
+        </footer>
+        <script src="js/main.js"></script>        
+</body>
+
+</html>
