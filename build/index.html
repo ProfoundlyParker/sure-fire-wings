@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Sure Fire Hot Wings</title>
-    <link rel="stylesheet" href="build/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<!--whenever you come back to this project, as of 06/29: trying to get rid of x-scrollbar for small breakpoints and wanting to add margin-x for small breakpoints as well-->
 <body class="min-h-screen bg-white-light dark:bg-black-light dark:text-white-light">
         <header class="bg-gradient-to-tr from-orange via-yellow to-red text-black-light sticky top-0 z-10">
             <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
@@ -21,7 +20,6 @@
                         <a href="#menu" class="hover:opacity-70 font-medium">Menu</a>
                         <a href="#reviews" class="hover:opacity-70 font-medium">Reviews</a>
                         <a href="#contact" class="hover:opacity-70 font-medium">Contact</a>
-
                     </nav>
                 </div>
             </section>
@@ -36,9 +34,8 @@
                     <a href="#contact" class="w-full text-center py-6 hover:opacity-80">Contact</a>
                 </nav>
             </section>
-
-            <!-- Hero Section -->
         </header>
+        <!-- Hero Section -->
         <main class="max-w-4xl mx-auto">
             <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row pt-6 pb-0 items-center gap-8 mb-0 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
                 <article class="sm:w-1/2">
@@ -66,12 +63,12 @@
 
         <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
 
-<!-- Flavor Profiles Section -->
+    <!-- Flavor Profiles Section -->
     <div id="flavors" class="mx-auto max-w-3xl text-center my-12">
         <h3 class="mb-1 text-3xl font-bold">Flavor Profiles</h3>
     </div>        
-<!--Testing flavors feature-->
-    <section class="container max-w-full grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6 my-12 justify-evenly">
+    <!--Flavor Profiles Cards-->
+    <section class="container max-w-full mx-6 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6 my-12 justify-evenly">
         <div class="flex min-h-fit items-start justify-center bg-transparent">
             <div class="group h-80 w-64 [perspective:1000px]">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -108,7 +105,7 @@
             <div class="group h-80 w-64 [perspective:1000px]">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 <div class="absolute inset-0">
-                <img class="h-full w-full rounded-xl object-contain shadow-xl shadow-black/40 bg-red" src="./img/hot.png" alt="Hot">
+                    <img class="h-full w-full rounded-xl object-contain shadow-xl shadow-black/40 bg-red" src="./img/hot.png" alt="Hot">
                 </div>
                 <div class="absolute inset-0 h-full w-full rounded-xl bg-red-dark/80 px-12 text-center text-white-light [transform:rotateY(180deg)] [backface-visibility:hidden]">
                 <div class="flex min-h-full flex-col items-center justify-center">
@@ -124,7 +121,6 @@
     <div id="menu"></div>
     <br><br><br>
     
-
     <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
 
     <!--MENU-->
@@ -180,11 +176,10 @@
                 </div>
             </div>
         </div>
-
         <!-- MEDIUM VARIETIES -->   
     <section id="menu-medium">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!--MEDIUM VARIETY 1-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!--MEDIUM VARIETY 1-->
             <div class="grid mt-12">
                 <div class="bg-orange transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
                     <span class="bg-orange-dark border-none rounded-full text-white-light text-sm px-4 py-1 inline-block mb-4">Medium</span>
@@ -231,7 +226,6 @@
             </div>
         </div> 
     </section>
-
     <!-- HOT VARIETIES -->
     <section id="menu-hot">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -283,15 +277,16 @@
         </div>
         <div id="reviews"></div>
         <br><br><br>
+
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
     
-            <section class="px-4 my-8">
-                <div class="mx-auto max-w-3xl text-center">  
-                    <h3 class="mb-6 text-3xl font-bold">Customer Reviews</h3>
-                    <p class="mb-6 pb-2 text-black-light dark:text-white-light md:mb-12">
-                        See what all the cluck is about!
-                    </p>
-                </div>
+        <section class="px-4 my-8">
+            <div class="mx-auto max-w-3xl text-center">  
+                <h3 class="mb-6 text-3xl font-bold">Customer Reviews</h3>
+                <p class="mb-6 pb-2 text-black-light dark:text-white-light md:mb-12">
+                    See what all the cluck is about!
+                </p>
+            </div>
           
             <div class="grid gap-12 text-center md:grid-cols-2">
               <!--First Testimonial-->
@@ -320,9 +315,8 @@
                 <p class="italic">- Teresa J.</p>
               </div>
             </div>
-          </section>
+        </section>
        
-
 
         <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
 
@@ -388,19 +382,19 @@
 
 <hr class="mx-auto bg-black-light dark:bg-white-light w-1/2">
 
-            <!-- Contact Section -->
-            <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-black dark:text-white">
+        <!-- Contact Section -->
+        <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-black dark:text-white">
                     Contact Us
-                </h2>
-                <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none" />  
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none"></textarea>
-                <button class="bg-orange hover:bg-orange-dark active:bg-orange-light text-white-light dark:text-white-light p-3 w-48 rounded-lg">Submit</button>
-                </form>
-            </section>
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none" />  
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-black dark:border-none"></textarea>
+            <button class="bg-orange hover:bg-orange-dark active:bg-orange-light text-white-light dark:text-white-light p-3 w-48 rounded-lg">Submit</button>
+            </form>
+        </section>
         </main>
 
         <!-- Footer -->
