@@ -5,7 +5,7 @@
 <img src="https://github.com/deverestHood/sure-fire-wings/assets/125313227/aac1ed4e-8fb5-44d2-95a3-563df0ca1ea5" width="900" height="450">
 
 <h2 id="description">Description</h2>
-<p>This project was inspired by Dave Gray's <a href="https://www.youtube.com/watch?v=lCxcTsOHrjo&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&index=6">Tailwind CSS video tutorial</a> but ultimately, I decided to take things in my own creative (and flavorful) direction.
+<p>This project was inspired by <a href="https://github.com/gitdagray">Dave Gray's</a> <a href="https://www.youtube.com/watch?v=lCxcTsOHrjo&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&index=6">Tailwind CSS video tutorial</a> but ultimately, I decided to take things in my own creative (and flavorful) direction.
 The goal of this project was to familiarize myself with Tailwind CSS's constraint-based utility classes.</p>
 
 ## Features
