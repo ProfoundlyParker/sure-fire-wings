@@ -28,3 +28,6 @@ Here are a few tips to get the most out of the SFW site:
 - Scroll through the reviews section to see what people are saying about SFW.
 - Explore the image gallery to learn more about the Sure Fire Wings food truck and local events.
 
+## Image Credits
+<a href="https://unsplash.com">Unsplash</a>
+
