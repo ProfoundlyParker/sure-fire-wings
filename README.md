@@ -2,7 +2,7 @@
 🔥 A mock hot wing food truck site styled with Tailwind CSS
 <h2>View live site:</h2>
 <p><a href="https://sure-fire-wings.onrender.com/">https://sure-fire-wings.onrender.com/</a></p>
-<img src="https://github.com/deverestHood/sure-fire-wings/assets/125313227/aac1ed4e-8fb5-44d2-95a3-563df0ca1ea5" width="1000" height="450">
+<img src="https://github.com/deverestHood/sure-fire-wings/assets/125313227/aac1ed4e-8fb5-44d2-95a3-563df0ca1ea5" width="900" height="450">
 
 <h2 id="description">Description</h2>
 <p>This project was inspired by Dave Gray's <a href="https://www.youtube.com/watch?v=lCxcTsOHrjo&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&index=6">Tailwind CSS video tutorial</a> but ultimately, I decided to take things in my own creative (and flavorful) direction.
